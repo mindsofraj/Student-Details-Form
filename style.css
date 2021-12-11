@@ -47,6 +47,8 @@ textarea {
   resize: vertical;
   outline: none;
   background: rgba(244, 251, 255, 0.554);
+  font-size: 17px;
+  font-weight: 500;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -71,7 +73,7 @@ label {
 
 /* Style the submit button */
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: #1958a7;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -79,13 +81,16 @@ input[type="submit"] {
   cursor: pointer;
   float: right;
 }
+input[type="submit"]:hover {
+  background-color: #2578dd;
+}
 input:focus {
   background-color: rgb(249, 254, 255);
   border-radius: 10px;
   outline: none;
 }
 textarea:focus {
-  background-color: rgb(249, 254, 255);
+  background-color: rgba(244, 251, 255, 0.554);
   padding: 20px;
   border-radius: 10px;
   outline: none;
