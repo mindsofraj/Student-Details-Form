@@ -55,6 +55,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
 
 input[type="radio"] {
   margin: 0 10px 0 10px;
@@ -81,6 +87,7 @@ input[type="submit"] {
   cursor: pointer;
   float: right;
 }
+
 input[type="submit"]:hover {
   background-color: #2578dd;
 }
@@ -99,7 +106,7 @@ textarea:focus {
 /* Style the container */
 .container {
   background-image: linear-gradient(#f2f2f259, #f2f2f241);
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   width: 100%;
   min-height: 100vh;
 }
@@ -124,6 +131,7 @@ textarea:focus {
   display: table;
   clear: both;
 }
+/* Table 1 Styling */
 .academicProfile {
   border-collapse: collapse;
   margin: 25px 0;
@@ -152,6 +160,57 @@ textarea:focus {
 .academicProfile td {
   background-color: rgba(224, 224, 225, 0.411);
 }
+/* Table 2 Styling */
+.semesterParticulars {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  max-width: 100%;
+}
+.semesterParticulars thead tr {
+  background-color: #1958a7;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.semesterParticulars th,
+.semesterParticulars td {
+  padding: 0px 4px;
+}
+.semesterParticulars tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+.semesterParticulars tbody th {
+  text-align: left;
+}
+.semesterParticulars tbody tr:last-of-type {
+  border-bottom: 1px solid #1958a7;
+}
+.semesterParticulars td {
+  background-color: rgba(224, 224, 225, 0.411);
+}
+
+/* Declaration Paragraph */
+.declaration {
+  text-align: center;
+  margin: 20px;
+  color: rgba(32, 46, 54, 0.801);
+}
+.declaration h5 {
+  text-decoration: underline;
+  font-family: "poppins";
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.declaration p {
+  font-family: "poppins";
+  font-size: 15px;
+}
+.copyright {
+  text-decoration: none;
+  color: rgb(9, 38, 42);
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25,
@@ -167,6 +226,15 @@ textarea:focus {
     display: none;
   }
   .academicProfile,
+  tbody,
+  td {
+    display: block;
+    width: 100%;
+  }
+  .semesterParticulars thead {
+    display: none;
+  }
+  .semesterParticulars,
   tbody,
   td {
     display: block;
