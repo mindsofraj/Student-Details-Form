@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(#c4fdfffd, #51afe6d0);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  padding: 13px 0px;
+  border-radius: 0px 0px 30px 30px;
+  background-color: #1958a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+nav h1 {
+  font-family: "poppins";
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+  margin: 5px;
+  font-size: 33px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="month"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  outline: none;
+  background: rgba(244, 251, 255, 0.554);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+  border: 0px;
+}
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input:focus {
+  background-color: rgb(249, 254, 255);
+  border-radius: 10px;
+  outline: none;
+}
+textarea:focus {
+  background-color: rgb(249, 254, 255);
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Style the container */
+.container {
+  background-image: linear-gradient(#f2f2f259, #f2f2f241);
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.academicProfile {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  max-width: 100%;
+}
+.academicProfile thead tr {
+  background-color: #1958a7;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.academicProfile th,
+.academicProfile td {
+  padding: 5px 4px;
+}
+.academicProfile tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+.academicProfile tbody th {
+  text-align: left;
+}
+.academicProfile tbody tr:last-of-type {
+  border-bottom: 1px solid #1958a7;
+}
+.academicProfile td {
+  background-color: rgba(224, 224, 225, 0.411);
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .academicProfile thead {
+    display: none;
+  }
+  .academicProfile,
+  tbody,
+  td {
+    display: block;
+    width: 100%;
+  }
+}

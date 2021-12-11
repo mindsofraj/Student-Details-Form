@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 class="heading">STUDENT DETAILS</h1>
+    </nav>
+    <div class="container">
+      <form action="index.php" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="gender">Gender</label>
+          </div>
+          <div class="col-75 gender">
+            <input type="radio" name="radio" id="male" /><label for="male"
+              >Male</label
+            >
+            <input type="radio" name="radio" id="female" /><label for="female"
+              >Female</label
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="registerNumber">Register Number</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="registerNumber" id="registerNumber" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="date">Date</label>
+          </div>
+          <div class="col-75">
+            <input type="date" name="dob" id="dob" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="age">Age</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="age" id="age" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="address">Address</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="address"
+              name="address"
+              placeholder="Your Address.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="contactNumber">Contact Number</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="contactNumber" id="contactNumber" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">E-Mail</label>
+          </div>
+          <div class="col-75">
+            <input type="email" name="email" id="email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fatherName">Father Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="fatherName" id="fatherName" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="motherName">Mother Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="motherName" id="motherName" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="guardianName">Guardian Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="guardianName" id="guardianName" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fatherOccupation">Father's Occupation</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="fatherOccupation" id="fatherOccupation" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="motherOccupation">Mother's Occupation</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="motherOccupation" id="motherOccupation" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fatherContactNumber">Father's Contact Number</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="number"
+              name="fatherContactNumber"
+              id="fatherContactNumber"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="annualIncome">Parent's Annual Income</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="annualIncome" id="annualIncome" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="aadharNumber">Aadhar Number</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="aadharNumber" id="aadharNumber" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="community">Community</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="community" id="community" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="caste">Caste</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="caste" id="caste" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="religion">Religion</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="religion" id="religion" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="academicProfile">Academic Profile</label>
+          </div>
+          <div class="col-75">
+            <table class="academicProfile">
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>SSLC</th>
+                  <th>HSC</th>
+                  <th>Diploma(if Lateral Entry)</th>
+                  <th>UG</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Percentage/CGPA</th>
+                  <td>
+                    <input
+                      placeholder="SSLC"
+                      type="number"
+                      name="sslcPercentage"
+                      id="sslcPercentage"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="HSC"
+                      type="number"
+                      name="hscPercentage"
+                      id="hscPercentage"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="DIPLOMA(For Lateral Entry)"
+                      type="number"
+                      name="diplomaPercentage"
+                      id="diplomaPercentage"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="UG"
+                      type="number"
+                      name="ugPercentage"
+                      id="ugPercentage"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Month/Year of Passing</th>
+                  <td>
+                    <input
+                      placeholder="SSLC"
+                      onfocus="(this.type='month')"
+                      type="text"
+                      name="sslcMonthYear"
+                      id="sslcMonthYear"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="HSC"
+                      onfocus="(this.type='month')"
+                      type="text"
+                      name="hscMonthYear"
+                      id="hscMonthYear"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="DIPLOMA"
+                      onfocus="(this.type='month')"
+                      type="text"
+                      name="diplomaMonthYear"
+                      id="diplomaMonthYear"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      placeholder="UG"
+                      onfocus="(this.type='month')"
+                      type="text"
+                      name="ugMonthYear"
+                      id="ugMonthYear"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Medium of Study</th>
+                  <td>
+                    <select name="sslcMediumSelect" id="sslcMediumSelect">
+                      <option value="englishMedium">English Medium</option>
+                      <option value="tamilMedium">Tamil Medium</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="hscMediumSelect" id="hscMediumSelect">
+                      <option value="englishMedium">English Medium</option>
+                      <option value="tamilMedium">Tamil Medium</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="diplomaMediumSelect" id="diplomaMediumSelect">
+                      <option value="englishMedium">English Medium</option>
+                      <option value="tamilMedium">Tamil Medium</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="ugMediumSelect" id="ugMediumSelect">
+                      <option value="englishMedium">English Medium</option>
+                      <option value="tamilMedium">Tamil Medium</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
