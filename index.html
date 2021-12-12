@@ -26,11 +26,11 @@
             <label for="gender">Gender</label>
           </div>
           <div class="col-75 gender">
-            <input required type="radio" name="radio" id="male" /><label
+            <input required type="radio" name="gender" id="male" /><label
               for="male"
               >Male</label
             >
-            <input required type="radio" name="radio" id="female" /><label
+            <input required type="radio" name="gender" id="female" /><label
               for="female"
               >Female</label
             >
@@ -273,6 +273,7 @@
                     <input
                       placeholder="SSLC"
                       onfocus="(this.type='month')"
+                      onblur="(this.type='text')"
                       type="text"
                       name="sslcMonthYear"
                       id="sslcMonthYear"
@@ -282,6 +283,7 @@
                     <input
                       placeholder="HSC"
                       onfocus="(this.type='month')"
+                      onblur="(this.type='text')"
                       type="text"
                       name="hscMonthYear"
                       id="hscMonthYear"
@@ -291,6 +293,7 @@
                     <input
                       placeholder="DIPLOMA"
                       onfocus="(this.type='month')"
+                      onblur="(this.type='text')"
                       type="text"
                       name="diplomaMonthYear"
                       id="diplomaMonthYear"
@@ -300,6 +303,7 @@
                     <input
                       placeholder="UG"
                       onfocus="(this.type='month')"
+                      onblur="(this.type='text')"
                       type="text"
                       name="ugMonthYear"
                       id="ugMonthYear"
@@ -683,13 +687,13 @@
             <input
               required
               type="radio"
-              name="radio"
+              name="physicallyDisabled"
               id="physicallyDisabledYes"
             /><label for="physicallyDisabledYes">Yes</label>
             <input
               required
               type="radio"
-              name="radio"
+              name="physicallyDisabled"
               id="physicallyDisabledNo"
             /><label for="physicallyDisabledNo">No</label>
           </div>
@@ -702,13 +706,13 @@
             <input
               required
               type="radio"
-              name="radio"
+              name="firstGraduate"
               id="firstGraduateYes"
             /><label for="firstGraduateYes">Yes</label>
             <input
               required
               type="radio"
-              name="radio"
+              name="firstGraduate"
               id="firstGraduateNo"
             /><label for="firstGraduateNo">No</label>
           </div>
@@ -722,13 +726,13 @@
             <input
               required
               type="radio"
-              name="radio"
+              name="breakOfStudy"
               id="breakOfStudyYes"
             /><label for="breakOfStudyYes">Yes</label>
             <input
               required
               type="radio"
-              name="radio"
+              name="breakOfStudy"
               id="breakOfStudyNo"
             /><label for="breakOfStudyNo">No</label>
           </div>
@@ -738,14 +742,18 @@
             <label for="passport">Do you have Passport?</label>
           </div>
           <div class="col-75">
-            <input required type="radio" name="radio" id="passportYes" /><label
-              for="passportYes"
-              >Yes</label
-            >
-            <input required type="radio" name="radio" id="passportNo" /><label
-              for="passportNo"
-              >No</label
-            >
+            <input
+              required
+              type="radio"
+              name="passport"
+              id="passportYes"
+            /><label for="passportYes">Yes</label>
+            <input
+              required
+              type="radio"
+              name="passport"
+              id="passportNo"
+            /><label for="passportNo">No</label>
           </div>
         </div>
         <div class="row">
@@ -756,13 +764,13 @@
             <input
               required
               type="radio"
-              name="radio"
+              name="placementTraining"
               id="placementTrainingYes"
             /><label for="placementTrainingYes">Yes</label>
             <input
               required
               type="radio"
-              name="radio"
+              name="placementTraining"
               id="placementTrainingNo"
             /><label for="placementTrainingNo">No</label>
           </div>
@@ -771,7 +779,7 @@
         <div class="declaration">
           <h5>Declaration</h5>
           <p>
-            I hereby declare that the information provided above by me, Are true
+            I hereby declare that the information provided above by me are true
             to best of my knowledge.
           </p>
           <p>
